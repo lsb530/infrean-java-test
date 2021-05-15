@@ -1,11 +1,10 @@
 package com.example.infreanjavatest;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.DisplayNameGeneration;
@@ -13,14 +12,12 @@ import org.junit.jupiter.api.DisplayNameGenerator;
 import org.junit.jupiter.api.Test;
 
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class) // _를 빈 공백문자로 치환
-class StudyTest {
+public class BasicTest {
 
     @Test
     @DisplayName("스터디 만들기")
     void create_new_study() {
         Study study = Study.builder()
-//            .limit(-3)
-//            .status(StudyStatus.STARTED)
             .build();
         // expected, actual, message
         // 람다로 만들지 않으면 테스트가 실패하던 말던 문자열 연산을 한다.
@@ -33,28 +30,14 @@ class StudyTest {
     }
 
     @Test
+    void this_is_a_test() {
+        System.out.println("hello");
+    }
+
+    @Test
+    @DisplayName("실행안됨")
     @Disabled
-    void create_new_study_again() {
-        System.out.println("create1");
-    }
-
-    @BeforeAll
-    static void beforeAll() {
-        System.out.println("before all");
-    }
-
-    @AfterAll
-    static void afterAll() {
-        System.out.println("after all");
-    }
-
-    @BeforeEach
-    void beforeEach() {
-        System.out.println("before each");
-    }
-
-    @AfterEach
-    void afterEach() {
-        System.out.println("after each");
+    void notExcute() {
+        System.out.println("no");
     }
 }
