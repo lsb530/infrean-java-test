@@ -1,4 +1,4 @@
-package com.example.infreanjavatest.config;
+package com.example.infreanjavatest.junit5.config;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 @Test
-@Tag("fast")
-public @interface FastTest {
+@Tag("slow")
+public @interface SlowTest {
 
 }

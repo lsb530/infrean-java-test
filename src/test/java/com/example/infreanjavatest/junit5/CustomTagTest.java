@@ -1,7 +1,7 @@
-package com.example.infreanjavatest;
+package com.example.infreanjavatest.junit5;
 
-import com.example.infreanjavatest.config.FastTest;
-import com.example.infreanjavatest.config.SlowTest;
+import com.example.infreanjavatest.junit5.config.FastTest;
+import com.example.infreanjavatest.junit5.config.SlowTest;
 
 public class CustomTagTest {
 

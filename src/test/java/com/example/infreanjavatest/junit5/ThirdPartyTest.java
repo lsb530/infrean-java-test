@@ -1,7 +1,8 @@
-package com.example.infreanjavatest;
+package com.example.infreanjavatest.junit5;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.example.infreanjavatest.Study;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

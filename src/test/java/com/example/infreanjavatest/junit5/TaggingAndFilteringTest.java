@@ -1,4 +1,4 @@
-package com.example.infreanjavatest;
+package com.example.infreanjavatest.junit5;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;

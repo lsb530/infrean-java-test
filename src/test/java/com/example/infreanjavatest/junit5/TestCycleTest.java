@@ -1,4 +1,4 @@
-package com.example.infreanjavatest;
+package com.example.infreanjavatest.junit5;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
