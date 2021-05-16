@@ -3,7 +3,7 @@ package com.example.infreanjavatest.junit5;
 import static org.junit.jupiter.api.Assertions.assertTimeout;
 import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
 
-import com.example.infreanjavatest.Study;
+import com.example.infreanjavatest.domain.Study;
 import java.time.Duration;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

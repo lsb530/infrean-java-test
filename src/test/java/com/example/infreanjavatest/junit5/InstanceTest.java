@@ -2,7 +2,7 @@ package com.example.infreanjavatest.junit5;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.example.infreanjavatest.Study;
+import com.example.infreanjavatest.domain.Study;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
@@ -32,7 +32,7 @@ public class InstanceTest {
         System.out.println(this);
         System.out.println(value++);
         Study actual = new Study(1);
-        assertThat(actual.getLimit()).isGreaterThan(0);
+        assertThat(actual.getLimitCount()).isGreaterThan(0);
     }
 
     @Test

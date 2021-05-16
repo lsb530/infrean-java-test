@@ -2,11 +2,10 @@ package com.example.infreanjavatest.junit5;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.example.infreanjavatest.Study;
+import com.example.infreanjavatest.domain.Study;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.RepetitionInfo;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ParameterContext;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.aggregator.AggregateWith;
@@ -17,9 +16,7 @@ import org.junit.jupiter.params.converter.ArgumentConversionException;
 import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.converter.SimpleArgumentConverter;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.EmptySource;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
-import org.junit.jupiter.params.provider.NullSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 public class RepeatTest {
@@ -65,7 +62,7 @@ public class RepeatTest {
     @ParameterizedTest(name = "{index} {displayName} limit={0}")
     @ValueSource(ints = {10, 20, 40})
     void parameterizedTest4(@ConvertWith(StudyConverter.class) Study study) {
-        System.out.println(study.getLimit());
+        System.out.println(study.getLimitCount());
     }
 
     @DisplayName("스터디 만들기")

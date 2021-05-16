@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import static org.junit.jupiter.api.Assumptions.assumingThat;
 
-import com.example.infreanjavatest.Study;
+import com.example.infreanjavatest.domain.Study;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledOnOs;
@@ -27,13 +27,13 @@ public class CriteriaTest {
         assumingThat("LOCAL".equalsIgnoreCase(test_env), () -> {
             System.out.println("local");
             Study actual = new Study(100);
-            assertThat(actual.getLimit()).isGreaterThan(0);
+            assertThat(actual.getLimitCount()).isGreaterThan(0);
         });
 
         assumingThat("BOKI".equalsIgnoreCase(test_env), () -> {
             System.out.println("boki");
             Study actual = new Study(10);
-            assertThat(actual.getLimit()).isGreaterThan(0);
+            assertThat(actual.getLimitCount()).isGreaterThan(0);
         });
     }
 

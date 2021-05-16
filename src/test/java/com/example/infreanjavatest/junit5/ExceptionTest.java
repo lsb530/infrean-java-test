@@ -3,7 +3,7 @@ package com.example.infreanjavatest.junit5;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import com.example.infreanjavatest.Study;
+import com.example.infreanjavatest.domain.Study;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
